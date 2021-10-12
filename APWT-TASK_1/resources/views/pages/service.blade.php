@@ -13,80 +13,23 @@
                 </div>
             </div>
             <div class="row">
+			@foreach($services as $service)
                 <div class="col-sm-4">
                     <div class="single-service">
                         <div class="service-icon">
-                            <i class="fa fa-laptop"></i>
+                            <i class="{{$service['icon']}}"></i>
                         </div>
                         <div class="service-text">
-						<p>Android Apps  
-                            <span>Development</span></p>
+						<p>{{$service['sevice_name1']}}  
+                            <span>{{$service['sevice_name2']}}</span></p>
                             
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-4">
-                    <div class="single-service">
-                        <div class="service-icon">
-                            <i class="fa fa-paint-brush"></i>
-                        </div>
-                        <div class="service-text">
-                            <p>Graphic 
-                            <span>Design</span></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-4">
-                    <div class="single-service">
-                        <div class="service-icon">
-                            <i class="fa fa-wifi"></i>
-                        </div>
-                        <div class="service-text">
-                            <p>Website Design &
-                            <span>Development</span></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-4">
-                    <div class="single-service">
-                        <div class="angle"></div>
-                        <div class="service-icon">
-                            <i class="fa fa-video-camera"></i>
-                        </div>
-                        <div class="service-text">
-                            <p>Video   
-                            <span>animation</span></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-4">
-                    <div class="single-service">
-                        <div class="angle"></div>
-                        <div class="service-icon">
-                            <i class="fa fa-globe"></i>
-                        </div>
-                        <div class="service-text">
-                            <p>App Store    
-                            <span>Optimization</span></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-4">
-                    <div class="single-service">
-                        <div class="angle"></div>
-                        <div class="service-icon">
-                            <i class="fa fa-bar-chart-o"></i>
-                        </div>
-                        <div class="service-text">
-                            <p>App     
-                            <span>marketing</span></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+			@endforeach
+			
+ </div>
+       </div>
     </section>
    
  

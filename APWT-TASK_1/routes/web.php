@@ -57,25 +57,6 @@ Route::get('/service', function () {
 
         ),
 
-        array(
-            'icon' => 'fa fa-video-camera',
-            'sevice_name1' => 'Video',
-            'sevice_name2' => 'animation',
-
-        ),
-
-        array(
-            'icon' => 'fa fa-globe',
-            'sevice_name1' => 'App Store',
-            'sevice_name2' => 'Optimization',
-
-        ),
-        array(
-            'icon' => 'fa fa-bar-chart-o    ',
-            'sevice_name1' => 'App',
-            'sevice_name2' => 'Marketing',
-
-        )
     );
 
     $data = array('services' => $service);

@@ -4,7 +4,7 @@
                                     <li class="smooth-scroll"><a href="{{route('about-us')}}">About us</a></li>
                                     <li class="smooth-scroll"><a  href="{{route('service')}}">service</a></li>
                                     <li class="smooth-scroll"><a  href="{{route('teams')}}">Our Team</a></li>
-                                    <li class="smooth-scroll"><a  href="{{route('gallery')}}">Gallery</a></li>
+                                    
                                     <li class="smooth-scroll"><a  href="{{route('contact-us')}}">Contact Us</a></li>
                                     
                                     <audio autoplay="autoplay" repeat="false">

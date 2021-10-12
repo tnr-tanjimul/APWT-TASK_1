@@ -14,9 +14,14 @@ use Illuminate\Support\Facades\Route;
 */
 
 
-Route::get('/', function () {
+
+
+
+Route::get('/home', function () {
     return view('pages.home');
 });
+
+
 Route::get('/product', function () {
     return view('pages.product');
 });
@@ -24,11 +29,57 @@ Route::get('/teams', function () {
     return view('pages.teams');
 });
 Route::get('/contact-us', function () {
-    return view('pages.about');
+    return view('pages.contact');
 });
 Route::get('/about-us', function () {
     return view('pages.about');
 });
 Route::get('/service', function () {
-    return view('pages.service');
+
+    $service = array(
+        array(
+            'icon' => 'fa fa-laptop',
+            'sevice_name1' => 'Android Apps',
+            'sevice_name2' => 'Development',
+
+        ),
+        array(
+            'icon' => 'fa fa-paint-brush',
+            'sevice_name1' => 'Graphic',
+            'sevice_name2' => 'Design',
+
+        ),
+
+        array(
+            'icon' => 'fa fa-wifi',
+            'sevice_name1' => 'Website Design &',
+            'sevice_name2' => 'Development',
+
+        ),
+
+        array(
+            'icon' => 'fa fa-video-camera',
+            'sevice_name1' => 'Video',
+            'sevice_name2' => 'animation',
+
+        ),
+
+        array(
+            'icon' => 'fa fa-globe',
+            'sevice_name1' => 'App Store',
+            'sevice_name2' => 'Optimization',
+
+        ),
+        array(
+            'icon' => 'fa fa-bar-chart-o    ',
+            'sevice_name1' => 'App',
+            'sevice_name2' => 'Marketing',
+
+        )
+    );
+
+    $data = array('services' => $service);
+
+
+    return view('pages.service')->with($data);
 });

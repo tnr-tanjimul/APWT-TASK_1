@@ -19,7 +19,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/home', function () {
     return view('pages.home');
-});
+})->name('home');
 
 
 Route::get('/product', function () {
@@ -27,13 +27,13 @@ Route::get('/product', function () {
 });
 Route::get('/teams', function () {
     return view('pages.teams');
-});
+})->name('teams');
 Route::get('/contact-us', function () {
     return view('pages.contact');
-});
+})->name('contact-us');
 Route::get('/about-us', function () {
     return view('pages.about');
-});
+})->name('about-us');
 Route::get('/service', function () {
 
     $service = array(
@@ -63,4 +63,4 @@ Route::get('/service', function () {
 
 
     return view('pages.service')->with($data);
-});
+})->name('service');

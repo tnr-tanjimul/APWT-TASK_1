@@ -1,0 +1,80 @@
+/* Medium Layout: 1280px. */
+@media only screen and (min-width: 992px) and (max-width: 1200px) { 
+    .header img{}
+    .root-responsive-menu{}
+    .main-menu{}
+    .welcome-text h1, .section-title-main h2, .section-title-main-2 h2{}
+    .welcome-text h4{}
+    .single-bottom-box{}
+    .about-home-right{}
+    .qoute-right{}
+    .quote-text {}
+    .item_4{}
+    .contact-form input{}
+    .contact-form textarea{}
+    .contact-form input[type="submit"]{}
+
+    
+}
+/* Tablet Layout: 768px. */
+@media only screen and (min-width: 768px) and (max-width: 991px) { 
+    .header img{margin: 0 auto;
+    display: block}
+    .root-responsive-menu{display: none}
+    .main-menu{text-align: center;display: block;margin-top: 30px}
+    .welcome-text h1, .section-title-main h2, .section-title-main-2 h2{font-size: 45px}
+    .welcome-text h4{font-size: 17px;letter-spacing: 10px}
+    .single-bottom-box{margin: 40px 0}
+    .about-home-right{margin-top: 50px}
+    .qoute-right{text-align: right}
+    .quote-text {text-align: left}
+    .item_4{width: 100%}
+    .contact-form input{width: 90%;margin: 0 15px }
+    .contact-form textarea{width: 90%;margin: 0 15px }
+    .contact-form input[type="submit"]{width: 30%;}
+    
+    
+}
+/* Mobile Layout: 320px. */
+@media only screen and (max-width: 767px) { 
+    .root-responsive-menu{display: block}
+    .main-menu{display: none}
+    .welcome-text h1, .section-title-main h2, .section-title-main-2 h2{font-size: 35px}
+    .welcome-text h4{font-size: 15px;letter-spacing: 7px}
+    .single-bottom-box{margin: 30px 0}
+    .about-home-right{margin-top: 50px}
+    .quote-overlay-1{display: none}
+    .quote-overlay-2{display: none}
+    .quote-area{background: #e55454  none repeat scroll 0 0}
+    .qoute-right{text-align: center}
+    .themes-btn{background: #f6c640  none repeat scroll 0 0;
+        color: #000;
+        margin-top: 50px;}
+    .quote-text {text-align: center}
+    .item_4{width: 80%}
+    .contact-form input{width: 91%;margin: 0px 20px}
+    .contact-form textarea{width: 91%;margin: 0px 20px}
+    .contact-form input[type="submit"]{width: 40%}
+}
+/* Wide Mobile Layout: 480px. */
+@media only screen and (min-width: 480px) and (max-width: 767px) { 
+    .root-responsive-menu{display: block}
+    .main-menu{display: none}
+    .welcome-text h1, .section-title-main h2, .section-title-main-2 h2{font-size: 40px}
+    .welcome-text h4{font-size: 17px;
+        letter-spacing: 10px;}
+    .single-bottom-box{margin: 30px 0}
+    .about-home-right{margin-top: 50px}
+    .quote-overlay-1{display: none}
+    .quote-overlay-2{display: none}
+    .quote-area{background: #e55454  none repeat scroll 0 0}
+    .qoute-right{text-align: center}
+    .themes-btn{background: #f6c640  none repeat scroll 0 0;
+        color: #000;
+        margin-top: 50px;}
+    .quote-text {text-align: center}
+    .item_4{width: 80%}
+    .contact-form input{width: 92%;margin: 0px 20px}
+    .contact-form textarea{width: 92%;margin: 0px 20px}
+    .contact-form input[type="submit"]{width: 40%}
+}
